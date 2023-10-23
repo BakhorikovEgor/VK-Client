@@ -9,7 +9,7 @@ class Program
 {
     public static async Task Main(string[] args)
     {
-        var clientId = "51777023";
+        var clientId = args[0];
         var redirectUri = "https://oauth.vk.com/blank.html";
         var authString =
             $"https://oauth.vk.com/authorize?client_id={clientId}&display=page&redirect_uri={redirectUri}&response_type=token&v=5.131";
